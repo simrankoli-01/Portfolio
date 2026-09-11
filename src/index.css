@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body, html{
+  overflow: hidden;
+  /* cursor: none; */
+  /* pointer-events: none; */
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: space;
+  src: url(./assets/fonts/file1.woff2);
+}
+
+@font-face {
+  font-family: galaxy;
+  src: url(./assets/fonts/file2.woff2);
+}
+
+@font-face {
+  font-family: stars;
+  src: url(./assets/fonts/file3.woff2);
+}
+
+@font-face {
+  font-family: comet;
+  src: url(./assets/fonts/file4.woff2);
+}
