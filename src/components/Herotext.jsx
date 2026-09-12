@@ -88,7 +88,7 @@ const Herotext = () => {
 
           <div className="mt-4 gap-4 sm:mt-5">
             <a
-              href="/simran.pdf"
+              href="/simran.docx"
               target="_blank"
               rel="noopener noreferrer"
               className="magnetic-button cursor-button rounded-full border px-5 py-2 font-[space] text-[9px] uppercase tracking-[0.22em] transition-all duration-300 hover:bg-white hover:text-black"
