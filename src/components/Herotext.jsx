@@ -61,21 +61,22 @@ const Herotext = () => {
           "> {name.split("").map((char, index) => (
             <span
               key={index}
-              className="name-char inline-block">
+              className="name-char inline-block text-pink-300">
               {char === " " ? "\u00A0" : char}
             </span>
           ))}
           <span className="text-[#e4dfd8]">.</span>
         </h1>
+        
         <div
           className="mt-10 w-full max-w-85 sm:mt-12 sm:max-w-95 md:mt-14 md:max-w-105">
           <div
-            className="h2 font-[galaxy] text-[clamp(1.8rem,6vw,3.2rem)] leading-[0.9] tracking-tighter text-[#F5F3EE] md:text-[clamp(2.2rem,3vw,3.2rem)]
+            className="h2 font-[galaxy] text-[clamp(1.8rem,6vw,3.2rem)] leading-[0.9] tracking-tighter md:text-[clamp(2.2rem,3vw,3.2rem)]
             ">
-            <span className="frontend block">
+            <span className="frontend block text-pink-200">
               Frontend
             </span>
-            <span className="developer block text-[#A9A6A0]">
+            <span className="developer block text-[#bab7b0]">
               Developer
             </span>
           </div>
