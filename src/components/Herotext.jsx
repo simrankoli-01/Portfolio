@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useState } from "react";
 
-const Herotext = () => {
+const Herotext = ({ startAnimation = false }) => {
   const [time, setTime] = useState("");
   const name = `Simran Koli`
 
@@ -11,7 +11,9 @@ const Herotext = () => {
   }
 
   useGSAP(() => {
-    const tl = gsap.timeline()
+    if (!startAnimation) return;
+
+    const tl = gsap.timeline();
     gsap.to(".scroll-arrow", {
       y: 5,
       duration: 0.8,
@@ -19,12 +21,12 @@ const Herotext = () => {
       yoyo: true,
       ease: "power1.inOut",
     });
-    tl.from(".hire", { y: 50, opacity: 0 })
-    tl.from(".name-char", { y: 50, opacity: 0, stagger: 0.15 })
-    tl.from(".frontend", { opacity: 0, y: 50 })
-    tl.from(".developer", { opacity: 0, y: 50 })
-    tl.from(".para-line", { opacity: 0, y: 50, stagger: 0.15 })
-  })
+    tl.from(".hire", { y: 50, opacity: 0 });
+    tl.from(".name-char", { y: 50, opacity: 0, stagger: 0.15 });
+    tl.from(".frontend", { opacity: 0, y: 50 });
+    tl.from(".developer", { opacity: 0, y: 50 });
+    tl.from(".para-line", { opacity: 0, y: 50, stagger: 0.15 });
+  }, [startAnimation]);
   useEffect(() => {
     const updateTime = () => {
       setTime(
@@ -43,14 +45,14 @@ const Herotext = () => {
   return (
     <main className="w-full text-white">
       <div
-        className="mx-auto flex min-h-screen w-full max-w-350 flex-col items-start px-5 pt-50 sm:px-8 md:px-12 md:pt-30 lg:px-20 lg:pt-25 xl:px-24">
+        className="mx-auto flex min-h-screen w-full max-w-350 flex-col items-start px-5 pt-80 sm:px-8 md:px-12 md:pt-30 lg:px-20 lg:pt-25 xl:px-24">
         <div className="hire px-1 flex items-center gap-2 sm:gap-3">
           <span className="relative flex h-2 w-2 shrink-0">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#E8E2D8]" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#dfaed6]" />
           </span>
           <span
-            className="font-[space] text-[8px] uppercase tracking-[0.22em] text-[#D6D2CA] sm:text-[9px] sm:tracking-[0.28em] md:text-[10px]  md:tracking-[0.32em]
+            className="font-[space] text-[8px] uppercase tracking-[0.22em] text-pink-300 sm:text-[9px] sm:tracking-[0.28em] md:text-[10px]  md:tracking-[0.32em]
   "
           >
             Available for opportunities
@@ -65,7 +67,7 @@ const Herotext = () => {
               {char === " " ? "\u00A0" : char}
             </span>
           ))}
-          <span className="text-[#e4dfd8]">.</span>
+          <span className="text-[#f4b1e1]">.</span>
         </h1>
         
         <div
@@ -80,7 +82,7 @@ const Herotext = () => {
               Developer
             </span>
           </div>
-          <p className="mt-3 max-w-75 overflow-hidden font-[stars] text-[11px] md:leading-normal sm:leading-[1.85] text-[#c0bdb4] sm:max-w-85 sm:text-xs md:max-w-92.5 md:text-[15px]">
+          <p className="mt-3 max-w-75 overflow-hidden font-[stars] text-[11px] md:leading-normal sm:leading-[1.85] text-gray-400 sm:max-w-85 sm:text-xs md:max-w-92.5 md:text-[15px]">
             <span className="para-line block">I build modern, interactive and responsive digital</span>
             <span className="para-line block">experiences with React, GSAP and thoughtful</span>
             <span className="para-line block">frontend design</span>

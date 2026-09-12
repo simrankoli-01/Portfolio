@@ -9,7 +9,6 @@ export { default as blogImg } from "./assets/images/blog.webp";
 export { default as currencyImg } from "./assets/images/currency.webp";
 export { default as desktop } from "./assets/images/desktops.png";
 export { default as weatherImg } from "./assets/images/forecast.webp";
-export { default as simran2 } from "./assets/images/simran2.jpg";
 export { default as simranImage } from "./assets/images/simran3.png";
 export { default as simranImg } from "./assets/images/simran4.png";
 export { default as profile } from "./assets/images/simran5.png";

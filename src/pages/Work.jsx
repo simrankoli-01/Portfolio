@@ -17,8 +17,8 @@ const Work = () => {
       title: 'Weatherly',
       description: 'Real-time weather, made simple.',
       image: weatherImg,
-      url: 'https://exchangecurrencywith.netlify.app/',
-      github_url: 'https://github.com/simrankoli-01/weather-app'
+      url: 'https://weatherlywithus.netlify.ap',
+      github_url: 'https://github.com/simrankoli-01/Weather'
     },
     {
       id: 2,
@@ -30,14 +30,6 @@ const Work = () => {
     },
     {
       id: 3,
-      title: 'Convert',
-      description: 'Simple currency conversion.',
-      image: currencyImg,
-      url: 'https://exchangecurrencywith.netlify.app/',
-      github_url: 'https://github.com/simrankoli-01/weather-app'
-    },
-    {
-      id: 4,
       title: 'Convert',
       description: 'Simple currency conversion.',
       image: currencyImg,

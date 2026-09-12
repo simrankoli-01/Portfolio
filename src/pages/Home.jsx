@@ -1,7 +1,7 @@
 import Herotext from "../components/Herotext";
 import simranImage from "../assets/images/simran3.png";
 
-const Home = () => {
+const Home = ({ startAnimation = false }) => {
   return (
     <header
       className=" w-full
@@ -22,7 +22,7 @@ const Home = () => {
           z-10
         "
       >
-        <Herotext />
+        <Herotext startAnimation={startAnimation} />
       </div>
 
       <div

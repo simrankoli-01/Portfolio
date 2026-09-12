@@ -54,7 +54,7 @@ const App = () => {
         <Navbar scrollRef={scrollRef} />
         <div className="w-full relative">
           <div className="stack-page relative z-1 w-full min-h-screen">
-            <Home />
+            <Home startAnimation={!loading} />
           </div>
           <div id="intro" className="stack-page relative z-2 w-full min-h-screen">
             <Intro />
