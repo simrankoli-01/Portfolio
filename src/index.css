@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
-body, html{
-  overflow: hidden;
-  /* cursor: none; */
-  /* pointer-events: none; */
+body, html {
+  overflow-x: hidden;
   background-color: black;
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
 }
 
 @font-face {
