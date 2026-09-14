@@ -17,7 +17,7 @@ const Work = () => {
       title: 'Weatherly',
       description: 'Real-time weather, made simple.',
       image: weatherImg,
-      url: 'https://weatherlywithus.netlify.ap',
+      url: 'https://weatherlywithus.netlify.app/',
       github_url: 'https://github.com/simrankoli-01/Weather'
     },
     {
