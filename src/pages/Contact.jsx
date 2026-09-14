@@ -169,13 +169,13 @@ const Contact = () => {
       </div>
       <address className="contact-footer mt-20 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-6 not-italic md:flex-row md:items-center">
         <a
-          href="mailto:simmi27167461@gmail.com"
+          href="simmi27167461@gmail.com"
           className="group flex items-center gap-3 text-white/50 transition-colors duration-300 hover:text-white"
         >
           <MdOutlineMail className="text-2xl" />
 
           <span className="font-[stars] text-sm font-extralight">
-            simmi27167461@gmail.com ↗
+            Email ↗
           </span>
         </a>
 
